@@ -4,34 +4,24 @@ def call(body) {
   body.delegate = pipelineParams
   body()
 
-  pipeline {
+pipeline {
     agent any
 
     stages {
-      stage('Checkout') {
-        steps {
-          checkout scm
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
         }
-      }
-      stage('Get Dockerfile') {
-        steps {
-          script {
-            def tmpFile = libraryResource 'Dockerfile'
-            writeFile file: 'Dockerfile', text: tmpFile
-          }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
         }
-      }
-      stage('Build') {
-        steps {
-          script {
-            sh '''
-              docker version
-              docker build -t ealebed/hellonode:latest .
-              docker image ls
-            '''
-          }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
         }
-      }
     }
-  }
 }
