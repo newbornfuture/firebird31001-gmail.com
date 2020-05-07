@@ -1,3 +1,3 @@
-@Library('jenkins-shared-libs@master') _
+/*@Library('jenkins-shared-libs@master') _
 
-allPipeline {}
+allPipeline {}*/
