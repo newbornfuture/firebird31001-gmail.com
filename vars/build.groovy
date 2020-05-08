@@ -1,3 +1,1 @@
-def call(body) {
-    echo "Start Build"
-}
+println "Start Build"
