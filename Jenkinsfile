@@ -2,20 +2,19 @@
 pipeline {
     agent any
         stages {
-            stage('Build') {
+            stage('Stage1') {
                 steps {
                 var1()
                 }
             }
-            stage('Test') {
+            stage('Stage2') {
                 steps {
                 var2()
                 }
             }
-            stage('Deploy') {
+            stage('Stage3') {
                 steps {
                 var3()
-                sh "env"
                 }
             }
         }

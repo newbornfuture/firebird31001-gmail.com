@@ -1,3 +1,3 @@
 def call(body) {
-    echo "Start Deploy"
+    echo "STAGE3"
 }

@@ -1,3 +1,3 @@
 def call(body) {
-println "Start Build"
+    echo "STAGE1"
 }
