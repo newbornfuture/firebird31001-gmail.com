@@ -1,27 +1,22 @@
 @Library('shared-library') _
 pipeline {
     agent any
-
-    stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
+        stages {
+            stage('Build') {
+                steps {
+                var1()
+                }
+            }
+            stage('Test') {
+                steps {
+                var2()
+                }
+            }
+            stage('Deploy') {
+                steps {
+                var3()
+                sh "env"
+                }
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Test2') {
-            steps {
-                echo 'Testing2..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
-            }
-        }
-    }
 }
