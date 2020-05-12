@@ -1,3 +1,3 @@
 def message(PERSON) {
-    echo "Hello ${PERSON}" 
+    echo "Hello" 
 }
