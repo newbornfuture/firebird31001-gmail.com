@@ -1,1 +1,0 @@
-def PERSON = "SOMEBODY"
