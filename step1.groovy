@@ -1,3 +1,3 @@
-def call(body) {
+def message(PERSON) {
     echo "Hello ${PERSON}" 
 }
