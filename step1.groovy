@@ -1,3 +1,3 @@
-def message(PERSON) {
+def message() {
     echo "Hello" 
 }
