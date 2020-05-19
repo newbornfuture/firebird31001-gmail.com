@@ -1,3 +1,3 @@
-def call(body) {
-    echo "STAGE1"
+def call(body) {    
+    echo "STAGE1--TEST"
 }
